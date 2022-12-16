@@ -4,12 +4,13 @@ enableSearch = true
 # socials
 twitter = "@janedoe"
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
-introDescription = "Technologist, perpetual student, teacher, continual incremental improvement."
+introDescription = "안녕하세요."
+introURL = false
 # introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
 # description = "A theme based on VMware's Clarity Design System for publishing technical blogs with Hugo." # Set your site's meta tag (SEO) description here. Alternatively set this description in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
 # keywords = ["design", "clarity", "hugo theme"] # Set your site's meta tag (SEO) keywords here. Alternatively set these in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
 
-# showShare = false # Uncomment to not show share buttons on each post. Also available in each post's front matter.
+showShare = false # Uncomment to not show share buttons on each post. Also available in each post's front matter.
 
 # Google analytics Id
 ga_analytics = "XXXXXXXXXX"
@@ -18,7 +19,7 @@ ga_analytics = "XXXXXXXXXX"
 # baidu_analytics = "XXXXXXXX"
 
 # limit the number of taxonomies links shown on the sidebar of each page by default.
-numberOfTagsShown = 14 # Applies for all other default & custom taxonomies. e.g categories, brands see https://gohugo.io/content-management/taxonomies#what-is-a-taxonomy
+numberOfTagsShown = 0 # Applies for all other default & custom taxonomies. e.g categories, brands see https://gohugo.io/content-management/taxonomies#what-is-a-taxonomy
 
 # Whether to default to storing images and other assets in the `static` directory, or use Hugo page bundles.
 # Switch to `true` if you'd like to group assets with the post itself (as a "leaf bundle").
@@ -49,10 +50,10 @@ fontsDir = "fonts/" # without a leading forward slash
 fallBackOgImage = "images/thumbnail.png"
 
 # Logo image
-logo = "logos/logo.png"
+# logo = "logos/logo.png"
 
 # center logo on navbar
-centerLogo = false # Set to "true" for centering or "false" for left aligned.
+# centerLogo = true # Set to "true" for centering or "false" for left aligned.
 
 # sets the maximum number of lines per codeblock. The codeblock will however be scrollable and expandable.
 codeMaxLines = 7
@@ -64,7 +65,7 @@ codeLineNumbers = false
 enableMathNotation = false
 
 # directory(s) where your articles are located
-mainSections = ["post"] # see config details here https://gohugo.io/functions/where/#mainsections
+mainSections = ["post", "test"] # see config details here https://gohugo.io/functions/where/#mainsections
 
 # Label Non inline images on an article body
 figurePositionShow = false # toggle on or off globally
@@ -72,7 +73,7 @@ figurePositionShow = false # toggle on or off globally
 figurePositionLabel = "Figure" # the text before image number e.g Figure 1.0
 
 # Set the collapsed mobile navigation to either appear from the left or the right
-mobileNavigation = "left" # if you prefer right change to 'right'
+mobileNavigation = "right" # if you prefer right change to 'right'
 
 # some site owners want to decide how they would like their sites to be introduced users. These settings give you as a site owner to decide how the user will view your site for the first time.
 
@@ -97,7 +98,7 @@ languageMenuName = "🌐"
 # titleSeparator = "|"
 
 # Enable or disable comments globally. Default to true.
-# comments = false
+comments = true
 
 # Enable or disable Utterances (https://github.com/utterance/utterances) Github Issue-Based Commenting
 # utterances = true  #Run the utterances script in the single.html layout to load https://utteranc.es comments
@@ -112,26 +113,27 @@ languageMenuName = "🌐"
 # numberOfFeaturedPosts = 8
 
 # Pin featured posts in list.
-# pinFeatured = true
+pinFeatured = false
 
 # Maximum number of pinned featured posts. (default: 8)
 # numberOfPinnedPosts = 8
 
 # Date format. Checkout https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference for details.
-# dateFormat = "2006-01-02" # Default to "Jan 2, 2006".
+dateFormat = "2006-01-02" # Default to "Jan 2, 2006".
 # customFonts = false # toggle to true if you want to use custom fonts only.
 
 # The year when ths website was created, this value is used in the copyright
 # notice of the footer.
-# since = 2016
+since = 2022
 
 # Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
-# showRelatedInArticle = false
-# showRelatedInSidebar = false
+# 사이드 및 아래의 Series. 정상 동작 안하는 것 같다.
+showRelatedInArticle = false
+showRelatedInSidebar = false
 
 # website author
 [author]
-name = "Jane Doe"
+name = "Yang Chan-hong"
 # photo = "images/jane-doe.png" #include this if you would like to show the author photo on the sidebar
 
 [plausible_analytics]
