@@ -124,7 +124,7 @@ dateFormat = "2006-01-02" # Default to "Jan 2, 2006".
 
 # The year when ths website was created, this value is used in the copyright
 # notice of the footer.
-since = 2022
+since = 2020
 
 # Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
 # 사이드 및 아래의 Series. 정상 동작 안하는 것 같다.

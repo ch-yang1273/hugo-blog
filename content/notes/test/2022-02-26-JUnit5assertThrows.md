@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}" # Title of the blog post.
-date: {{ .Date }} # 월, 일은 꼭 2자리로 작성 (ex. 12-08)
+title: "JUnit5:assertThrows" # Title of the blog post.
+date: 2022-02-26 # 월, 일은 꼭 2자리로 작성 (ex. 12-08)
 description: "Article description." # Description used for search engine. (검색엔진을 위한 설명)
 featured: false # Sets if post is a featured post, making appear on the home page side bar. (feature는 하나만 하던가 쓰지 말자)
 draft: false # Sets whether to render this page. Draft of true will not be rendered. (set false 해야 포스팅 된다)
@@ -17,10 +17,32 @@ codeLineNumbers: true # Override global value for showing of line numbers within
 #figurePositionShow: true # Override global value for showing the figure label.
 #categories 는 한 개만 달고, 많이 늘리지 않도록.
 categories:
-  - None
+  - test
 tags:
-  - None
+  - test
 # comment: false # Disable comment if false.
 ---
 
-**Insert Lead paragraph here.**
+### 예제
+
+```java
+    @Test
+    public void 중복_회원_예외() throws Exception {
+        //Given
+        Member member1 = new Member();
+        member1.setName("spring");
+
+        Member member2 = new Member();
+        member2.setName("spring 1"); // 같은 이름으로 중복 회원가입
+
+        //When
+
+        memberService.join(member1);
+        IllegalStateException e = assertThrows(IllegalStateException.class,
+                () -> memberService.join(member2));//예외가 발생해야 한다.
+        //assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
+    }
+```
+
+- assertThrows( 발생해야 할 Exception, 검사할 람다식);
+- Exception가 발생하지 않아도, 예상되지 않은 Exception이 발생해도 Test가 Fail 난다.

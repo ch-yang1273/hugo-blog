@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}" # Title of the blog post.
-date: {{ .Date }} # 월, 일은 꼭 2자리로 작성 (ex. 12-08)
+title: "C# panel" # Title of the blog post.
+date: 2020-10-21 # 월, 일은 꼭 2자리로 작성 (ex. 12-08)
 description: "Article description." # Description used for search engine. (검색엔진을 위한 설명)
 featured: false # Sets if post is a featured post, making appear on the home page side bar. (feature는 하나만 하던가 쓰지 말자)
 draft: false # Sets whether to render this page. Draft of true will not be rendered. (set false 해야 포스팅 된다)
@@ -17,10 +17,19 @@ codeLineNumbers: true # Override global value for showing of line numbers within
 #figurePositionShow: true # Override global value for showing the figure label.
 #categories 는 한 개만 달고, 많이 늘리지 않도록.
 categories:
-  - None
+  - c/c#
 tags:
-  - None
+  - c#
 # comment: false # Disable comment if false.
 ---
 
-**Insert Lead paragraph here.**
+## 1. TableLayoutPanel
+
+## 2. Panel
+
+- TableLayoutPanel 으로 구도 잡고 위에 Panel 올려줘야 도구(controller? 컴포넌트?)들 올라감
+- 재생버튼같은거 달려있는데 부모 컨테이너에 도킹 뭐지? 도킹이 뭐지?
+
+## 3. 도킹
+
+- TableLayoutPanel 에 Panel 놓고 도킹하니까 쫙 퍼지면서 Layout크기만큼 쭉 커진다.
