@@ -1,12 +1,12 @@
 [[main]]
-  name = "posts"
-  url = "post/"
+  name = "Posts"
+  url = "posts/"
   weight = -110
 
 [[main]]
-  name = "test"
-  url = "test/"
-  weight = -110
+  name = "Notes"
+  url = "notes/"
+  weight = -109
 
 # [[main]]
 #   name = "Home"

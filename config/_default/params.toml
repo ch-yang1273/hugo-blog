@@ -2,7 +2,7 @@
 enableSearch = true
 
 # socials
-twitter = "@janedoe"
+# twitter = "@janedoe"
 largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
 introDescription = "안녕하세요."
 introURL = false
@@ -65,7 +65,7 @@ codeLineNumbers = false
 enableMathNotation = false
 
 # directory(s) where your articles are located
-mainSections = ["post", "test"] # see config details here https://gohugo.io/functions/where/#mainsections
+mainSections = ["posts", "notes"] # see config details here https://gohugo.io/functions/where/#mainsections
 
 # Label Non inline images on an article body
 figurePositionShow = false # toggle on or off globally
@@ -107,7 +107,7 @@ comments = true
 # utterancesIssueTerm = "pathname" # Default: pathname
 
 # Maximum number of recent posts. (default: 8)
-# numberOfRecentPosts = 8
+numberOfRecentPosts = 3
 
 # Maximum number of featured posts. (default: 8)
 # numberOfFeaturedPosts = 8
